@@ -16,6 +16,7 @@ JobShield AI is an AI-assisted preliminary risk assessment and domain security v
 - **Document & Image Text Extractor**: Extract text from PDF documents, plain text files, and scanned image notices via OCR.
 - **User Auth & API Key Portal**: User sign up, login, JWT token auth, and developer API key management.
 - **Interactive React Frontend**: Responsive dashboard with Recharts visualizations, history table with previews, model evaluation stats, and single-click exports.
+- **Vercel Deployment**: Configured for automated serverless builds.
 
 ---
 
