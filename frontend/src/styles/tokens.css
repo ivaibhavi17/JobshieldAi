@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Fragment+Mono&display=swap');
+
+:root {
+  --color-mineral: #e8eff0;
+  --color-source: #fbfdfc;
+  --color-ink: #17384a;
+  --color-ink-soft: rgba(23, 56, 74, 0.68);
+  --color-editorial-blue: #2b4aa0;
+  --color-rust: #c64a37;
+  --color-rule: #91a8ae;
+  --color-low: #237a59;
+  --color-moderate: #a97800;
+  --color-high: #c4601a;
+  --color-very-high: #b62d38;
+  --color-white: #ffffff;
+  --font-display: 'Bricolage Grotesque', sans-serif;
+  --font-body: 'Atkinson Hyperlegible Next', sans-serif;
+  --font-mono: 'Fragment Mono', monospace;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --border-thin: 1px;
+  --border-strong: 2px;
+  --radius-square: 0;
+  --radius-control: 2px;
+  --focus-ring: 3px solid var(--color-editorial-blue);
+  --shadow-drawer: 0 8px 24px rgba(23, 56, 74, 0.16);
+  --max-content: 1440px;
+}

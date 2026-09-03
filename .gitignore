@@ -1,0 +1,14 @@
+node_modules/
+frontend/dist/
+frontend/.env.local
+.env
+*.env
+.venv/
+__pycache__/
+*.pyc
+*.db
+*.log
+uploads/*
+!uploads/.gitkeep
+ml/saved_model/*
+!ml/saved_model/.gitkeep
