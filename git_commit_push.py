@@ -15,16 +15,16 @@ def run_git(args):
 
 def main():
     message = " ".join(sys.argv[1:]) if len(sys.argv) > 1 else "feat: update JobShield AI codebase"
-    print(f"📦 Staging all files and committing with message: '{message}'")
+    print(f"Staging all files and committing with message: '{message}'")
 
     run_git(["add", "."])
     code = run_git(["commit", "-m", message])
     if code == 0 or "nothing to commit" in str(code):
-        print("🚀 Pushing to GitHub (https://github.com/ivaibhavi17/JobshieldAi.git)...")
+        print("Pushing to GitHub (https://github.com/ivaibhavi17/JobshieldAi.git)...")
         run_git(["push", "origin", "main"])
-        print("✅ Successfully synced with GitHub!")
+        print("Successfully synced with GitHub!")
     else:
-        print("ℹ️ No new changes to commit.")
+        print("No new changes to commit.")
 
 if __name__ == "__main__":
     main()

@@ -3,7 +3,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_DB_PATH = f"sqlite:///{os.path.join(BASE_DIR, '..', 'jobshield.db')}"
+if os.environ.get("VERCEL"):
+    DEFAULT_DB_PATH = "sqlite:////tmp/jobshield.db"
+else:
+    DEFAULT_DB_PATH = f"sqlite:///{os.path.join(BASE_DIR, '..', 'jobshield.db')}"
+
 DB_PATH = os.environ.get("DATABASE_URL", DEFAULT_DB_PATH)
 
 engine = create_engine(
